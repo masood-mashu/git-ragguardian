@@ -1,14 +1,18 @@
-name: "hallucination-claim-verifier"
+name: hallucination-claim-verifier
+version: 1.0.0
 description: "Cross-verifies extracted factual statements against source context chunks"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "hallucination_claim_verifier.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     claim_verification_json:
-      type: "string"
+      type: string
       description: "JSON object with claim string and reference text"
   required:
-    - "claim_verification_json"
+    - claim_verification_json
+implementation:
+  type: script
+  path: hallucination_claim_verifier.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true
