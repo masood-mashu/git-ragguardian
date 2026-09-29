@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "monitor_context_drift",
+  "description": "Tracks semantic divergence and token distribution shifts across multi-turn retrieval",
+  "type": "object",
+  "properties": {
+    "turn_history_json": {
+      "type": "string",
+      "description": "JSON with turn sequence and intent similarity scores"
+    }
+  },
+  "required": [
+    "turn_history_json"
+  ]
+}

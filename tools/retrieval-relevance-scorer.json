@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "score_retrieval_relevance",
+  "description": "Scores semantic cosine similarity and lexical overlap between user query and retrieved context chunks",
+  "type": "object",
+  "properties": {
+    "query_context_json": {
+      "type": "string",
+      "description": "JSON object with query string and list of context chunks"
+    }
+  },
+  "required": [
+    "query_context_json"
+  ]
+}

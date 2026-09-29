@@ -1,0 +1,14 @@
+name: "hallucination-claim-verifier"
+description: "Cross-verifies extracted factual statements against source context chunks"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "hallucination_claim_verifier.py"
+parameters:
+  type: "object"
+  properties:
+    claim_verification_json:
+      type: "string"
+      description: "JSON object with claim string and reference text"
+  required:
+    - "claim_verification_json"

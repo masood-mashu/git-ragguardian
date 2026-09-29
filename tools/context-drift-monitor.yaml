@@ -1,0 +1,14 @@
+name: "context-drift-monitor"
+description: "Tracks semantic divergence and token distribution shifts across multi-turn retrieval"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "context_drift_monitor.py"
+parameters:
+  type: "object"
+  properties:
+    turn_history_json:
+      type: "string"
+      description: "JSON with turn sequence and intent similarity scores"
+  required:
+    - "turn_history_json"

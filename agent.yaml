@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: "git-ragguardian"
+version: "0.1.0"
+description: "Autonomous RAG Retrieval Relevance, Hallucination Auditing & Context Drift Guardian"
+framework: "opengap"
+authors:
+  - name: "masood-mashu"
+    email: "masoodmashu03@gmail.com"
+license: "Apache-2.0"
+
+runtime:
+  language: "python"
+  version: ">=3.10"
+  timeout: 120
+
+tags:
+  - developer-tools
+  - rag
+  - hallucination-detection
+  - context-drift
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-ragguardian-01"
+  passport_category: "Developer tools"

@@ -1,0 +1,14 @@
+name: "retrieval-relevance-scorer"
+description: "Scores semantic cosine similarity and lexical overlap between user query and retrieved context chunks"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "retrieval_relevance_scorer.py"
+parameters:
+  type: "object"
+  properties:
+    query_context_json:
+      type: "string"
+      description: "JSON object with query string and list of context chunks"
+  required:
+    - "query_context_json"
